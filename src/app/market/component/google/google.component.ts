@@ -5,12 +5,12 @@ import { InfoResponse } from "../../../model/marketInfoResponse";
 
 
 @Component({
-  selector: 'app-prueba',
-  templateUrl: './prueba.component.html',
-  styleUrls: ['./prueba.component.scss']
+  selector: 'app-google',
+  templateUrl: './google.component.html',
+  styleUrls: ['./google.component.scss']
 })
 
-export class PruebaComponent implements OnInit{
+export class GoogleComponent implements OnInit{
 
   news: any[]= [];
   news2: any[] = [];
@@ -21,10 +21,10 @@ export class PruebaComponent implements OnInit{
   }
 
   ngOnInit() {
-    this.marketService.getAppleInfo().subscribe(
+    this.marketService.getGoogleInfo().subscribe(
       Info => this.conmpanyInfo = Info
     )
-    this.marketService.getAppleNews().subscribe(
+    this.marketService.getGoogleNews().subscribe(
       (data) => {
 
         if (data.status == "success"){
@@ -47,3 +47,4 @@ export class PruebaComponent implements OnInit{
 
 
 }
+

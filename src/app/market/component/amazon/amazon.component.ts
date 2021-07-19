@@ -5,12 +5,12 @@ import { InfoResponse } from "../../../model/marketInfoResponse";
 
 
 @Component({
-  selector: 'app-prueba',
-  templateUrl: './prueba.component.html',
-  styleUrls: ['./prueba.component.scss']
+  selector: 'app-amazon',
+  templateUrl: './amazon.component.html',
+  styleUrls: ['./amazon.component.scss']
 })
 
-export class PruebaComponent implements OnInit{
+export class AmazonComponent implements OnInit{
 
   news: any[]= [];
   news2: any[] = [];
@@ -21,10 +21,10 @@ export class PruebaComponent implements OnInit{
   }
 
   ngOnInit() {
-    this.marketService.getAppleInfo().subscribe(
+    this.marketService.getAmazonInfo().subscribe(
       Info => this.conmpanyInfo = Info
     )
-    this.marketService.getAppleNews().subscribe(
+    this.marketService.getAmazonNews().subscribe(
       (data) => {
 
         if (data.status == "success"){
