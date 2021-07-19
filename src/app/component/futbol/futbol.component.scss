@@ -1,0 +1,57 @@
+#float-input{
+  border: 1px outset;
+}
+#form{
+  position: relative;
+}
+#section2{
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  #background{
+    background-position-x: unset;
+  }
+  .state1{
+    height: 100vh;
+  }
+  .state2{
+    height: 250vh;
+    background-repeat: repeat;
+  }
+  #inputFutbol{
+    position: absolute;
+    top: 37vh;
+  }
+  .añoInput{
+    display: grid;
+  }
+  #float-input{
+    height: 43px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .state1{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  body{
+    overflow: hidden;
+  }
+  .state2{
+    height: 275vh;
+    background-repeat: repeat-y;
+    background-position: right;
+  }
+  #inputFutbol{
+    position: relative;
+    top: 37vh;
+  }
+  .añoInput{
+    display: grid;
+  }
+  #float-input{
+    height: 43px;
+  }
+}

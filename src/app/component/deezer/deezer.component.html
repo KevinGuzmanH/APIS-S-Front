@@ -1,0 +1,16 @@
+<p-toast position="top-center"></p-toast>
+<div class="text-center container">
+  <div id="deezerLogo"></div>
+  <div id="description">
+    <p>Deezer es un servicio francés de música on demand similar a Spotify con un catálogo de canciones
+    y podcast muy completo y competitivo, su API nos permite ver información sobre artistas del mundo de la música
+    y obtener información sobre algunas de sus canciones</p>
+  </div>
+  <form ngNativeValidate (ngSubmit)="getArtistData()">
+
+    <input required [(ngModel)]="artistaName" [ngModelOptions]="{standalone: true}" type="text" pInputText />
+    <div>
+      <button pButton class="mt-2" type="submit" role="button" label="Small" icon="pi pi-search" [loading]="false" ></button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,12 @@
+<div id="agifyBack" >
+  <div id="agifyContent" class="text-center">
+    <h1 class="">Agify</h1>
+    <p>Esta API predice tu edad en base a tu nombre</p>
+    <input  type="text" id="age" pInputText [(ngModel)]="nombre">
+    <div (click)="getOld()" id="btnSearch" class="btn btn-outline-dark">
+      <i class="pi pi-search" ></i>
+    </div>
+    <div>Probablemente tienes:</div>
+    <div id="ageTxt" class="fs-2"></div>
+  </div>
+</div>

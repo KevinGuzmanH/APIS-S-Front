@@ -1,0 +1,17 @@
+<div id="webSearchColor">
+  <hr class="m-0">
+  <div id="resultsBackground" class="container py-5">
+    <p-card>
+      <div class="noticia" *ngFor="let resultado of resultadoshijos">
+        <a class="fs-4" target="_blank" href="{{resultado.url}}">
+          {{resultado.title}}
+        </a>
+        <p>
+          {{resultado.body.substr(0,230)}}...
+        </p>
+        <p-divider align="center" type="dashed">
+        </p-divider>
+      </div>
+    </p-card>
+  </div>
+</div>

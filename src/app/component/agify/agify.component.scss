@@ -1,0 +1,53 @@
+#agifyBack{
+  background-image: url("//cdn.flipsnack.com/collections/uploads/9af3265cc8b312066ec7e2af28961076_m");
+}
+#agifyBack{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100vw;
+}
+#btnSearch{
+  display: block;
+  width: fit-content;
+  margin: auto;
+  margin-top: 15px;
+}
+@media only screen and (min-width: 900px) and (max-width: 1100px){
+  #agifyContent{
+    position: absolute;
+    left: 6rem;
+    top: 12rem
+  }
+}
+@media only screen and (max-width: 600px){
+  #agifyContent{
+    position: absolute;
+    left: 10vw;
+    top: 12rem
+  }
+  #agifyContent>div{
+    color: aliceblue;
+  }
+}
+@media only screen and (min-width: 1101px) {
+  #agifyBack{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100vw;
+  }
+  #agifyContent{
+    position: absolute;
+    left: 16rem;
+    top: 12rem
+  }
+  #btnSearch{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 15px;
+  }
+}

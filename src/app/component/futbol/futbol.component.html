@@ -1,0 +1,76 @@
+<p-toast position="top-center"></p-toast>
+<div id="background" class="state1" [style.background-image]="'url(./assets/futbolBackground.png)'">
+  <div id="inputFutbol" class="text-center container">
+    <div id="form">
+      <form ngNativeValidate>
+      <label for="float-input">País de la liga</label>
+      <ng-autocomplete class="p-3"
+        required
+        [data]="paises"
+        (selected)='selectEvent($event)'
+        [searchKeyword]="keyword"
+        [itemTemplate]="itemTemplate"
+        [notFoundTemplate]="notFoundTemplate">
+      </ng-autocomplete>
+
+      <ng-template #itemTemplate let-item>
+        <a [innerHTML]="item.name"></a>
+      </ng-template>
+
+      <ng-template #notFoundTemplate let-notFound>
+        <div [innerHTML]="notFound"></div>
+      </ng-template>
+
+      <span class="añoInput">
+        <label for="float-input">Año</label>
+        <input [(ngModel)]="season" [ngModelOptions]="{standalone: true}" id="float-input" class="p-inputtext-sm" type="text" pInputText>
+      </span>
+
+      <div class="p-3">
+        <p-button type="submit" (click)="moverForm()" label="Search" icon="pi pi-search" [loading]="loading"></p-button>
+      </div>
+      </form>
+    </div>
+
+    <div id="section2" >
+      <div>
+        <span>{{nombreLiga}} </span>
+        <img [src]="bandera" style="width: 37px">
+      </div>
+    <div class="shadow-lg">
+    <p-table [value]="respuesta" [globalFilterFields]="['rank','team.name']">
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="rank">
+            <div class="p-d-flex p-jc-between p-ai-center">
+              Posición
+              <p-sortIcon field="rank"></p-sortIcon>
+            </div>
+          </th>
+          <th>Logo</th>
+          <th pSortableColumn="team.name">
+            <div class="p-d-flex p-jc-between p-ai-center">
+              Equipo
+              <p-sortIcon field="team.name"></p-sortIcon>
+            </div>
+          </th>
+          <th pSortableColumn="team.points">
+            <div class="p-d-flex p-jc-between p-ai-center">
+              Pts
+            </div>
+          </th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-equipo>
+        <tr>
+          <td pSortableColumn="rank">{{equipo.rank}}</td>
+          <td pSortableColumn="flag"><img [src]="equipo.team.logo" style="width: 35px;"></td>
+          <td pSortableColumn="team.name">{{equipo.team.name}}</td>
+          <td pSortableColumn="team.points">{{equipo.points}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+    </div>
+    </div>
+  </div>
+</div>

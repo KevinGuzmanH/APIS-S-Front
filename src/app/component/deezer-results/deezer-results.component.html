@@ -1,0 +1,135 @@
+<div class="row m-0 p-0">
+  <div class="col-lg-6">
+    <div id="sectionOne" class="text-center pt-5">
+      <div class="shadow-lg">
+      <p-card>
+        <img id="artistIMG" [src]="artista.picture_medium">
+
+        <div class="Info">
+        <span class="fs-1">{{artista.name}}</span>
+       </div>
+
+       <div class="Info">
+        <span>Número de Albuns: {{artista.nb_album}}</span>
+       </div>
+
+       <div class="Info footerDiv">
+        <span>Número Aproximado de Seguidores: {{artista.nb_fan}}</span>
+       </div>
+
+      </p-card>
+      </div>
+    </div>
+    </div>
+  <div class="col-lg-6">
+    <div class="center-conten">
+      <div class="mb-2 text-center">
+        <p-card>
+          <span class="fs-3">Canciones</span>
+        </p-card>
+      </div>
+
+      <div *ngIf="first == 0">
+        <div class="my-2 shadow">
+          <p-card>
+            <div class="container row p-0 m-0">
+              <div class="col-lg-6">
+                <div>Título: {{traks[5].title.substring(0,19)}}</div>
+                <div>Ranking {{traks[5].rank}}</div>
+                <p>Duracion {{traks[5].duration}} Segundos</p>
+              </div>
+              <div class="col-lg-6">
+                <div *ngFor="let contributor of traks[5].contributors">{{contributor.name}}</div>
+                <a target="_blank" [href]="traks[5].link">Escuchar en Deezer</a>
+              </div>
+            </div>
+          </p-card>
+        </div>
+        <div class="my-2 shadow">
+          <p-card>
+            <div class="container row p-0 m-0">
+              <div class="col-lg-6">
+                <div>Título: {{traks[4].title.substring(0,19)}}</div>
+                <div>Ranking {{traks[4].rank}}</div>
+                <p>Duracion {{traks[4].duration}} Segundos</p>
+              </div>
+              <div class="col-lg-6">
+                <div *ngFor="let contributor of traks[4].contributors">{{contributor.name}}</div>
+                <a target="_blank" [href]="traks[4].link">Escuchar en Deezer</a>
+              </div>
+            </div>
+          </p-card>
+        </div>
+      </div>
+
+      <div *ngIf="first == 1">
+        <div class="my-2 shadow">
+          <p-card>
+            <div class="container row p-0 m-0">
+              <div class="col-lg-6">
+                <div>Título: {{traks[3].title.substring(0,19)}}</div>
+                <div>Ranking {{traks[3].rank}}</div>
+                <p>Duracion {{traks[3].duration}} Segundos</p>
+              </div>
+              <div class="col-lg-6">
+                <div *ngFor="let contributor of traks[3].contributors">{{contributor.name}}</div>
+                <a target="_blank" [href]="traks[3].link">Escuchar en Deezer</a>
+              </div>
+            </div>
+          </p-card>
+        </div>
+        <div class="my-2 shadow">
+          <p-card>
+            <div class="container row p-0 m-0">
+              <div class="col-lg-6">
+                <div>Título: {{traks[2].title.substring(0,19)}}</div>
+                <div>Ranking {{traks[2].rank}}</div>
+                <p>Duracion {{traks[2].duration}} Segundos</p>
+              </div>
+              <div class="col-lg-6">
+                <div *ngFor="let contributor of traks[2].contributors">{{contributor.name}}</div>
+                <a target="_blank" [href]="traks[2].link">Escuchar en Deezer</a>
+              </div>
+            </div>
+          </p-card>
+        </div>
+      </div>
+      <div *ngIf="first == 2">
+        <div class="my-2 shadow">
+          <p-card>
+            <div class="container row p-0 m-0">
+              <div class="col-lg-6">
+                <div>Título: {{traks[1].title.substring(0,19)}}</div>
+                <div>Ranking {{traks[1].rank}} </div>
+                <p>Duracion {{traks[1].duration}} Segundos</p>
+              </div>
+              <div class="col-lg-6">
+                <div *ngFor="let contributor of traks[1].contributors">{{contributor.name}}</div>
+                <a target="_blank" [href]="traks[1].link">Escuchar en Deezer</a>
+              </div>
+            </div>
+          </p-card>
+        </div>
+        <div class="my-2 shadow">
+          <p-card>
+            <div class="container row p-0 m-0">
+              <div class="col-lg-6">
+                <div>Título: {{traks[0].title.substring(0,19)}}</div>
+                <div>Ranking {{traks[0].rank}} </div>
+                <p>Duracion {{traks[0].duration}} Segundos</p>
+              </div>
+              <div class="col-lg-6">
+                <div *ngFor="let contributor of traks[0].contributors">{{contributor.name}}</div>
+                <a target="_blank" [href]="traks[0].link">Escuchar en Deezer</a>
+              </div>
+            </div>
+          </p-card>
+        </div>
+      </div>
+
+      <p-paginator [rows]="10" [totalRecords]="100" [showFirstLastIcon]="false" (onPageChange)="paginate($event)" [totalRecords]="30" [pageLinkSize]="3"></p-paginator>
+
+    </div>
+
+    </div>
+  </div>

@@ -1,0 +1,37 @@
+
+#pokemonSection{
+  background-image: url("//cdn.flipsnack.com/collections/items/cb93c14514909c0ac6fa9ci122114201/covers/page_1/medium?v=1");
+}
+#paragraph{
+  font-family: "Nirmala UI";
+}
+p-card{
+  cursor: pointer;
+}
+
+img{
+  height: 150px;
+}
+#pokemonName{
+  text-transform: capitalize;
+}
+li{
+  width: fit-content;
+}
+ul{
+  text-align: -webkit-center;
+}
+@media only screen and (max-width: 600px){
+  #pokemonSection{
+    background-position: right;
+    height: 148vh;
+  }
+  li{
+    width: max-content;
+  }
+}
+@media only screen and (min-width: 601px){
+  #pokemonSection{
+    height: 100vh;
+  }
+}

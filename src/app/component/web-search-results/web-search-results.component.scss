@@ -1,0 +1,16 @@
+a{
+  text-decoration: none;
+}
+#webSearchColor{
+  background-color: aliceblue;
+}
+@media only screen and (min-width: 600px){
+  .noticia{
+    margin: 45px;
+  }
+}
+@media only screen and (max-width: 599px){
+  .noticia{
+    margin: 3px;
+  }
+}

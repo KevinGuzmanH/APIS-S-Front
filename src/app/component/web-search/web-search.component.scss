@@ -1,0 +1,28 @@
+#inputSearch{
+  width: 100%;
+}
+#inputSearch > input{
+  width: inherit;
+}
+#verRespuestas{
+  text-align: end;
+}
+#verRespuestas > a {
+  text-decoration: none;
+}
+#webSearchContent{
+  display: flex;
+  align-items: flex-end;
+  height: 50vh;
+}
+#webSearchContent>img{
+  width: inherit;
+}
+#ini{background-color: aliceblue}
+@media only screen and (max-width: 600px)  {
+  #webSearchContent{
+    display: flex;
+    align-items: flex-end;
+    height: 45vh;
+  }
+}

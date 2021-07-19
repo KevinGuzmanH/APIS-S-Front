@@ -1,0 +1,36 @@
+#deezerLogo{
+  background-image: url("http://1000marcas.net/wp-content/uploads/2021/04/Deezer-logo.png");
+  background-position-x: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+a{
+  text-decoration: none;
+}
+
+#description{
+  margin-inline: 34px;
+}
+@media only screen and (max-width: 600px){
+  input{
+    width: 30vh;
+  }
+  ::ng-deep body,html{
+    overflow: hidden;
+  }
+  #deezerLogo{
+    background-position-y: 190px;
+    height: 42vh;
+  }
+}
+@media only screen and (min-width: 601px){
+  input{
+    width: 100vh;
+    margin-inline: 129px;
+  }
+  #deezerLogo{
+    background-position-y: 90px;
+    height: 49vh;
+  }
+
+}
