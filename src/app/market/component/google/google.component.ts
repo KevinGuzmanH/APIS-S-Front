@@ -2,7 +2,7 @@ import {Component, Inject, OnInit} from '@angular/core';
 import { MarketService} from "../../../service/marketservice/market.service";
 import { MessageService } from "primeng/api";
 import { InfoResponse } from "../../../model/marketInfoResponse";
-
+import { multi } from "./data"
 
 @Component({
   selector: 'app-google',
@@ -17,7 +17,7 @@ export class GoogleComponent implements OnInit{
   conmpanyInfo!: InfoResponse;
 
   constructor(private marketService: MarketService,private messageService: MessageService) {
-
+    Object.assign(this,{ multi })
   }
 
   ngOnInit() {
@@ -43,8 +43,6 @@ export class GoogleComponent implements OnInit{
       }
     )
   }
-
-
 
 }
 

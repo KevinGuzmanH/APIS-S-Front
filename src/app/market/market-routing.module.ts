@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {PruebaComponent} from "./component/prueba/prueba.component";
+import {AppleComponent} from "./component/apple/apple.component";
 import {GoogleComponent} from "./component/google/google.component";
 import {AmazonComponent} from "./component/amazon/amazon.component";
 
 const routes: Routes = [
   {path: '', children: [
-      {path: 'prueba', component: PruebaComponent},
+      {path: 'apple', component: AppleComponent},
       {path: 'google', component: GoogleComponent},
       {path: 'amazon', component: AmazonComponent},
     ]}

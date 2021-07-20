@@ -6,11 +6,11 @@ import { InfoResponse } from "../../../model/marketInfoResponse";
 
 @Component({
   selector: 'app-prueba',
-  templateUrl: './prueba.component.html',
-  styleUrls: ['./prueba.component.scss']
+  templateUrl: './apple.component.html',
+  styleUrls: ['./apple.component.scss']
 })
 
-export class PruebaComponent implements OnInit{
+export class AppleComponent implements OnInit{
 
   news: any[]= [];
   news2: any[] = [];
