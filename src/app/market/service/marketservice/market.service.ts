@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import {Observable} from "rxjs";
-import {NewsResponse} from "../../model/marketNewsResponse";
-import {InfoResponse} from "../../model/marketInfoResponse";
+import {NewsResponse} from "../../../model/marketNewsResponse";
+import {InfoResponse} from "../../../model/marketInfoResponse";
 
 
 

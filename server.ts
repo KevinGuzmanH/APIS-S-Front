@@ -7,6 +7,10 @@ import { join } from 'path';
 import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
+import { applyDomino } from '@ntegral/ngx-universal-window';
+
+const BROWSER_DIR = join(process.cwd(), 'dist/criptoinfo/browser');
+applyDomino(global, join(BROWSER_DIR, 'index.html'));
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {

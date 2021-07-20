@@ -7,10 +7,10 @@ import { HomeComponent } from './component/home/home.component';
 import { PokemonComponent } from './component/pokemon/pokemon.component';
 import { CoinMarketCapComponent } from './component/coin-market-cap/coin-market-cap.component';
 import { SidebarCComponent } from './component/sidebar-c/sidebar-c.component';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {FormsModule} from "@angular/forms";
-import {HttpClientModule} from "@angular/common/http";
-import {AutocompleteLibModule} from 'angular-ng-autocomplete';
+import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { FormsModule} from "@angular/forms";
+import { HttpClientModule} from "@angular/common/http";
+import { AutocompleteLibModule} from 'angular-ng-autocomplete';
 import { NationalizComponent } from './component/nationaliz/nationaliz.component';
 import { WebSearchComponent } from './component/web-search/web-search.component';
 import { WebSearchResultsComponent } from './component/web-search-results/web-search-results.component';
@@ -32,7 +32,7 @@ import {ToastModule} from 'primeng/toast';
 import {MessageService} from "primeng/api";
 import {TableModule} from 'primeng/table';
 import {PaginatorModule} from 'primeng/paginator';
-import { GooComponent } from './component/goo/goo.component';
+import {MarketService} from "./market/service/marketservice/market.service";
 
 @NgModule({
   declarations: [
@@ -48,7 +48,6 @@ import { GooComponent } from './component/goo/goo.component';
     FutbolComponent,
     DeezerComponent,
     DeezerResultsComponent,
-    GooComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),
@@ -70,7 +69,7 @@ import { GooComponent } from './component/goo/goo.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [MessageService],
+  providers: [MessageService,MarketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,13 +9,12 @@ import { MarketNavbarComponent } from './component/market-navbar/market-navbar.c
 import { AmazonComponent } from './component/amazon/amazon.component';
 import { GoogleComponent } from './component/google/google.component';
 
-
 @NgModule({
   declarations: [
     AppleComponent,
     MarketNavbarComponent,
     AmazonComponent,
-    GoogleComponent
+    GoogleComponent,
   ],
   imports: [
     CommonModule,
