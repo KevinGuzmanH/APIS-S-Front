@@ -27,8 +27,7 @@ export class DeezerComponent implements OnInit {
         if (data.error === void(0)){
           if (isPlatformBrowser(this.platformId)) {
             window.localStorage.setItem('Artista', JSON.stringify(data));
-            //window.location=<Location><unknown>"https://deployapis.herokuapp.com/api/deezer/results";
-            window.location = <Location><unknown>"http://localhost:1000/api/deezer/results";
+            window.location=<Location><unknown>"https://deployapis.herokuapp.com/api/deezer/results";
           }
         }else {
           this.mesageservice.add({severity:'warn', summary: 'Aviso', detail: 'No se encontraron datos, intenta con otro contante',life: 3000});
