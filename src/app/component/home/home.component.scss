@@ -1,0 +1,78 @@
+
+::ng-deep body,html{
+  overflow: hidden;
+}
+@media only screen and (min-width: 601px) {
+  #divUno{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    font-family: cursive;
+    font-size: 4rem;
+  }
+  #pcTXT{
+    margin-top: 17%;
+    font-size: 2rem;
+  }
+  ::ng-deep body,html{
+    background-color: chocolate;
+  }
+  #circulo1,#circulo2,#circulo3,#futbolista,#nube,#pressT,#pikachu{
+    display: none;
+  }
+  #futbolistapc{
+    margin-left: 11rem;
+    transform: scale(0.7);
+  }
+}
+@media only screen and (max-width: 600px){
+  #divUno{
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: center;
+    overflow: hidden;
+    font-family: cursive;
+    font-size: 4rem;
+  }
+  #futbolistapc,#pcTXT{
+    display: none;
+  }
+  #pikachu{
+    transform: translateY(-96px);
+  }
+  #pressT{
+    position: absolute;
+    font-size: 14px;
+    left: 6rem;
+    z-index: 1000;
+  }
+  #nube{
+    position: absolute;
+    width: 30%;
+    left: 4rem;
+  }
+  #circulo1 {
+    top: 0rem;
+    position: absolute;
+    transform: scale(0.2);
+    left: 9rem;
+  }
+  #circulo2 {
+    top: 1rem;
+    position: absolute;
+    transform: scale(0.13);
+    left: 10rem;
+  }
+  #circulo3 {
+    top: 2rem;
+    position: absolute;
+    transform: scale(0.1);
+    left: 11rem;
+  }
+  #futbolista{
+    margin-top: 3rem;
+    margin-left: 6rem;
+    transform: scale(0.7);
+  }
+}

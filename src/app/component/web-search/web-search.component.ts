@@ -31,7 +31,7 @@ export class WebSearchComponent implements OnInit {
                     for (let i = 0; i < data.value.length; i++) {
                       this.resultados.push(data.value[i]);
                     }
-        console.log(this.resultados)
+                    console.log(this.resultados)
                   }
     );
   }

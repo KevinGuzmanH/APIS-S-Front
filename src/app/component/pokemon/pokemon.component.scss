@@ -3,7 +3,8 @@
   background-image: url("//cdn.flipsnack.com/collections/items/cb93c14514909c0ac6fa9ci122114201/covers/page_1/medium?v=1");
 }
 #paragraph{
-  font-family: "Nirmala UI";
+  font-family: monospace;
+  font-size: larger;
 }
 p-card{
   cursor: pointer;
@@ -24,7 +25,7 @@ ul{
 @media only screen and (max-width: 600px){
   #pokemonSection{
     background-position: right;
-    height: 148vh;
+    height: 100vh;
   }
   li{
     width: max-content;

@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
 import { PokemonComponent } from './component/pokemon/pokemon.component';
-import { CoinMarketCapComponent } from './component/coin-market-cap/coin-market-cap.component';
 import { SidebarCComponent } from './component/sidebar-c/sidebar-c.component';
 import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { FormsModule} from "@angular/forms";
@@ -40,7 +39,6 @@ import {MarketService} from "./market/service/marketservice/market.service";
     HomeComponent,
     SidebarCComponent,
     PokemonComponent,
-    CoinMarketCapComponent,
     NationalizComponent,
     AgifyComponent,
     WebSearchComponent,
