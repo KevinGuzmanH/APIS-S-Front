@@ -26,7 +26,7 @@ export class GoogleComponent implements OnInit{
       State: "CA",
       City: "Mountain View",
       Website: "http://www.abc.xyz",
-      Description: "Alphabet Inc.untain View, California.",
+      Description: "Loading Information...",
       "Full Time Employees": 139995,
       "Company Name": "Alphabet Inc.",
   "Short Company Name": "Alphabet Inc.",
